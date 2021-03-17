@@ -1,6 +1,7 @@
 package game.backend.pieces;
 import game.backend.*;
 
+
 /**
  * Abstract class to represent the pieces that are on the board and their colour, whether the can move and
  * whether or not they have been taken by the opposing player.
