@@ -21,11 +21,15 @@ public class Pawn extends Piece {
         } else if (start.getY() + 1 == end.getY() && (end.getPiece() == null) && (start.getX() == end.getX())) {
             return true;
         }
+
         //Check for attacking diagonally
         if ((start.getY() + 1 == end.getY() && ((start.getX() == end.getX() + 1) || (start.getX() == end.getX() - 1))
                 && (end.getPiece() != null))) {
             return true;
         }
+
+        //Check for en-passant
+
 
         return false;
     }
