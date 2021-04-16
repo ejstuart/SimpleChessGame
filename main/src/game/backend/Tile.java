@@ -1,14 +1,14 @@
 package game.backend;
 
-import game.backend.pieces.Piece;
+import game.backend.pieces.*;
 
-public class Square {
+public class Tile {
 
     private Piece piece;
     private int x;
     private int y;
 
-    public Square (int x, int y, Piece piece) {
+    public Tile(int x, int y, Piece piece) {
         this.setPiece(piece);
         this.setX(x);
         this.setY(y);
@@ -16,6 +16,10 @@ public class Square {
 
     public Piece getPiece() {
         return piece;
+    }
+
+    public boolean isEmptyTile() {
+        return piece == null;
     }
 
     public int getX() {

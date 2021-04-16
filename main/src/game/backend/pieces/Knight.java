@@ -1,7 +1,6 @@
 package game.backend.pieces;
 
 import game.backend.*;
-import java.math.*;
 
 public class Knight extends Piece{
 
@@ -10,7 +9,7 @@ public class Knight extends Piece{
     }
 
     @Override
-    public boolean canMove(Board board, Square start, Square end) {
+    public boolean canMove(Board board, Tile start, Tile end) {
 
         if (start.getPiece().isWhite() == end.getPiece().isWhite()) {
             return false;

@@ -31,5 +31,5 @@ public abstract class Piece {
         this.taken = taken;
     }
 
-    public abstract boolean canMove(Board board, Square start, Square end);
+    public abstract boolean canMove(Board board, Tile start, Tile end);
 }

@@ -8,7 +8,7 @@ public class Pawn extends Piece {
     }
 
     @Override
-    public boolean canMove(Board board, Square start, Square end) {
+    public boolean canMove(Board board, Tile start, Tile end) {
         //If they are the same colour then they cannot move
         if (start.getPiece().isWhite() == end.getPiece().isWhite()) {
             return false;
